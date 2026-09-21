@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Yamila · Mis 15</title>
+    <meta name="description" content="Invitación digital a los 15 años de Yamila">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Great+Vibes&family=Manrope:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="not-loaded">
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0"   stop-color="#7C9142"/>
+          <stop offset=".45" stop-color="#4E6323"/>
+          <stop offset="1"   stop-color="#2E3D14"/>
+        </linearGradient>
+        <linearGradient id="leafGradLight" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0"   stop-color="#AAB674"/>
+          <stop offset=".5"  stop-color="#839848"/>
+          <stop offset="1"   stop-color="#5A692A"/>
+        </linearGradient>
+        <linearGradient id="stemGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7C9142"/>
+          <stop offset="1" stop-color="#4A5324"/>
+        </linearGradient>
+
+        <symbol id="vineLeaf" viewBox="0 0 60 100">
+          <path d="M30 96 C29 84, 28 78, 27 72" stroke="#5A622C" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <g class="leaf-blade" fill="url(#leafGrad)">
+            <path fill="url(#leafGrad)" fill-rule="evenodd" d="
+              M30 4
+              C44 14, 57 32, 57 52
+              C57 70, 45 82, 30 84
+              C15 82, 3 70, 3 52
+              C3 32, 16 14, 30 4
+              Z
+              M16 30 a7.5 4 0 1 0 15 0 a7.5 4 0 1 0 -15 0 Z
+              M30 30 a7 3.6 0 1 0 14 0 a7 3.6 0 1 0 -14 0 Z
+              M12 48 a8.5 4.4 0 1 0 17 0 a8.5 4.4 0 1 0 -17 0 Z
+              M31 48 a8 4.2 0 1 0 16 0 a8 4.2 0 1 0 -16 0 Z
+              M17 66 a6.5 3.4 0 1 0 13 0 a6.5 3.4 0 1 0 -13 0 Z
+              M30 66 a6 3.2 0 1 0 12 0 a6 3.2 0 1 0 -12 0 Z"/>
+            <path class="leaf-varieg" d="
+              M30 8 C38 16, 46 28, 48 40 C44 34, 38 26, 30 20 Z
+              M12 40 C16 50, 22 62, 28 72 C20 68, 12 56, 9 44 Z
+              " fill="#D9D2BC" opacity=".55"/>
+            <path d="M30 8 C31 30, 31 58, 29 82" stroke="#39481A" stroke-width="1.5" fill="none" opacity=".5"/>
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="bg-scene" aria-hidden="true">
+      <div class="bg-gradient"></div>
+      <span class="orb orb--1"></span>
+      <span class="orb orb--2"></span>
+      <span class="orb orb--3"></span>
+      <span class="orb orb--4"></span>
+      <span class="orb orb--5"></span>
+      <span class="orb orb--6"></span>
+      <span class="orb orb--7"></span>
+      <span class="orb orb--8"></span>
+      <span class="orb orb--9"></span>
+      <div class="bg-grain"></div>
+    </div>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <radialGradient id="waxBody" cx="36%" cy="30%" r="82%">
+          <stop offset="0"   stop-color="#45B981"/>
+          <stop offset=".36" stop-color="#20905A"/>
+          <stop offset=".74" stop-color="#136A3F"/>
+          <stop offset="1"   stop-color="#0A4A2A"/>
+        </radialGradient>
+        <radialGradient id="waxDisc" cx="62%" cy="68%" r="78%">
+          <stop offset="0" stop-color="#2DA06A"/>
+          <stop offset="1" stop-color="#0F6B3F"/>
+        </radialGradient>
+        <linearGradient id="waxRim" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0"   stop-color="#062E1B"/>
+          <stop offset=".5"  stop-color="#1B7C4C" stop-opacity="0"/>
+          <stop offset="1"   stop-color="#8FEAB9"/>
+        </linearGradient>
+        <linearGradient id="waxNum" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3CB27B"/>
+          <stop offset="1" stop-color="#157447"/>
+        </linearGradient>
+        <filter id="waxSoft" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="1.7"/>
+        </filter>
+
+        <symbol id="waxSeal" viewBox="0 0 100 100">
+          <path d="M93.2 49.8 C93.0 56.6 92.9 62.8 90.3 69.4 C87.8 75.9 83.2 85.1 77.9 89.2 C72.5 93.2 64.0 92.1 58.2 93.5 C52.3 94.8 49.1 99.2 42.8 97.3 C36.5 95.4 26.2 86.6 20.6 82.0 C14.9 77.4 11.3 75.6 9.1 69.7 C6.9 63.8 7.9 53.0 7.4 46.7 C6.8 40.5 3.3 37.8 5.8 32.4 C8.3 27.0 16.2 18.9 22.2 14.3 C28.2 9.7 35.3 5.8 41.8 4.7 C48.2 3.5 55.7 5.7 61.1 7.4 C66.5 9.1 69.2 11.5 74.3 15.0 C79.3 18.6 88.1 23.0 91.2 28.8 C94.4 34.6 93.3 43.1 93.2 49.8Z" fill="url(#waxBody)" stroke="rgba(170,245,205,.38)" stroke-width="1"/>
+          <circle cx="50" cy="50" r="33" fill="url(#waxDisc)"/>
+          <circle cx="50" cy="50" r="33" fill="none" stroke="url(#waxRim)" stroke-width="3.4"/>
+          <circle cx="50" cy="50" r="30.2" fill="none" stroke="rgba(0,0,0,.22)" stroke-width=".8"/>
+          <g font-family="'Great Vibes', cursive" font-size="43" text-anchor="middle">
+            <text x="51.1" y="63.4" fill="#06301C" opacity=".9">15</text>
+            <text x="49.3" y="61.6" fill="#9CF0C4" opacity=".75">15</text>
+            <text x="50.2" y="62.5" fill="url(#waxNum)">15</text>
+          </g>
+          <ellipse cx="31" cy="22" rx="17" ry="6.5" fill="#fff" opacity=".24" filter="url(#waxSoft)" transform="rotate(-32 31 22)"/>
+          <circle cx="24.5" cy="30" r="1.9" fill="#fff" opacity=".55"/>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="gate" id="gate">
+      <div class="gate__stage">
+        <p class="gate__type" id="gateType" aria-label="¡Tenés una invitación especial!">
+          <span class="gate__type-text" id="gateTypeText"></span><span class="gate__caret" aria-hidden="true"></span>
+        </p>
+        
+        <div class="scroll" id="scroll">
+          <div class="scroll__shadow" aria-hidden="true"></div>
+          <div class="roll roll--top" aria-hidden="true"></div>
+          <div class="sheetwrap">
+            <div class="sheet">
+              <div class="ink">
+                <div class="ink__frame" aria-hidden="true"></div>
+                <p class="ink__for" id="scrollGuestWrap" hidden>
+                  <span class="ink__small">Para</span>
+                  <span class="ink__guest" id="scrollGuest"></span>
+                </p>
+                <p class="ink__name">Yamila</p>
+                <p class="ink__small">te invita a celebrar sus</p>
+                <p class="ink__num">15</p>
+                <p class="ink__small ink__small--hide">años</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="roll roll--bottom" aria-hidden="true"></div>
+          <div class="ribbon" aria-hidden="true"></div>
+          <button class="seal" id="seal" type="button" aria-label="Abrir la invitación">
+            <span class="seal__halo" aria-hidden="true"></span>
+            <span class="seal__body" aria-hidden="true">
+              <span class="seal__half seal__half--l"><svg viewBox="0 0 100 100"><use href="#waxSeal" width="100" height="100"/></svg></span>
+              <span class="seal__half seal__half--r"><svg viewBox="0 0 100 100"><use href="#waxSeal" width="100" height="100"/></svg></span>
+            </span>
+          </button>
+        </div>
+        <p class="gate__cta" id="gateCta">Tocá el sello para abrirlo</p>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero" id="hero">
+        <!-- Por si le pinta el video: borrar el <div class="hero__bg"> completo recomendado: .mp4 (H.264), 10-20s, sin audio, en loop, menos de 8-10 MB.
+          <video class="hero__bg-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+          </video> -->
+        <div class="hero__bg">
+          <div class="hero__bg-image"></div>
+          <div class="hero__bg-fade"></div>
+        </div>
+        <div class="countdown" id="countdown" aria-label="Cuenta regresiva">
+          <div class="countdown__unit">
+            <span class="countdown__num" data-count="days">00</span>
+            <span class="countdown__label">días</span>
+          </div>
+          <span class="countdown__sep" aria-hidden="true">:</span>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-count="hours">00</span>
+            <span class="countdown__label">horas</span>
+          </div>
+          <span class="countdown__sep" aria-hidden="true">:</span>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-count="minutes">00</span>
+            <span class="countdown__label">min</span>
+          </div>
+          <span class="countdown__sep" aria-hidden="true">:</span>
+          <div class="countdown__unit">
+            <span class="countdown__num" data-count="seconds">00</span>
+            <span class="countdown__label">seg</span>
+          </div>
+        </div>
+
+        <div class="hero__core">
+          <h1 class="hero__fifteen">
+            <span class="hero__mis">mis</span>15<span class="hero__anos">años</span>
+          </h1>
+          <h2 class="hero__name">Yamila</h2>
+        </div>
+
+        <button class="hero__scroll" id="heroScroll" aria-label="Deslizá para descubrir la magia">
+          <svg class="hero__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 4v15M5.5 12.5 12 19l6.5-6.5" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="hero__scroll-text">Deslizá para descubrir la magia</span>
+        </button>
+      </section>
+
+      <!-- FRASE + GALERÍA 3D -->
+      <section class="section section--gallery" id="galeria">
+        <div class="section-inner">
+          <blockquote class="phrase" data-reveal>
+            <span class="phrase__mark" aria-hidden="true">"</span>
+            <span class="phrase__line">
+              <span class="phrase__w" style="--i:0">Hoy</span>
+              <span class="phrase__w" style="--i:1">celebramos</span>
+              <span class="phrase__w" style="--i:2">no</span>
+              <span class="phrase__w" style="--i:3">solo</span>
+              <span class="phrase__w" style="--i:4">mi cumleaños</span>
+            </span>
+            <span class="phrase__line phrase__line--accent">
+              <span class="phrase__w" style="--i:5">Sino</span>
+              <span class="phrase__w" style="--i:6">el hermoso</span>
+              <span class="phrase__w" style="--i:7">paso</span>
+              <span class="phrase__w" style="--i:8">de mi</span>
+              <span class="phrase__w" style="--i:9">niñez</span>
+              <span class="phrase__w" style="--i:10">a la</span>
+              <span class="phrase__w" style="--i:11">juventud!.</span>
+            </span>
+            <span class="phrase__rule" aria-hidden="true"></span>
+          </blockquote>
+        </div>
+
+        <!-- Carrusel 3D -->
+        <div class="gallery-wrapper" data-reveal>
+          <div class="gallery-inner" style="--quantity: 8;">
+            <div class="gallery-card" style="--index:0; --card-tint: 106,207,157;"><div class="gallery-card__img" style="background-image:url('assets/gallery-1.webp')"></div></div>
+            <div class="gallery-card" style="--index:1; --card-tint: 229,215,198;"><div class="gallery-card__img" style="background-image:url('assets/gallery-2.webp')"></div></div>
+            <div class="gallery-card" style="--index:2; --card-tint: 169,232,198;"><div class="gallery-card__img" style="background-image:url('assets/gallery-3.webp')"></div></div>
+            <div class="gallery-card" style="--index:3; --card-tint: 250,248,245;"><div class="gallery-card__img" style="background-image:url('assets/gallery-4.webp')"></div></div>
+            <div class="gallery-card" style="--index:4; --card-tint: 106,207,157;"><div class="gallery-card__img" style="background-image:url('assets/gallery-5.webp')"></div></div>
+            <div class="gallery-card" style="--index:5; --card-tint: 229,215,198;"><div class="gallery-card__img" style="background-image:url('assets/gallery-6.webp')"></div></div>
+            <div class="gallery-card" style="--index:6; --card-tint: 169,232,198;"><div class="gallery-card__img" style="background-image:url('assets/gallery-7.webp')"></div></div>
+            <div class="gallery-card" style="--index:7; --card-tint: 250,248,245;"><div class="gallery-card__img" style="background-image:url('assets/gallery-8.webp')"></div></div>
+          </div>
+        </div>
+        <p class="gallery-hint" data-reveal>Tocá el carrusel para pausarlo</p>
+      </section>
+
+      <!-- mapa y ubi -->
+      <section class="section" id="ubicacion">
+        <div class="section-inner">
+          <div class="panel-wrap" data-vine data-reveal>
+            <div class="glass-panel map-panel">
+              <div class="map-panel__info">
+                <div class="info-row">
+                  <span class="info-row__icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.6C5 5.4 8.1 3 12 3s7 2.4 7 6.4C19 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.5"/></svg>
+                  </span>
+                  <div>
+                    <p class="info-row__title">Salón WoW</p>
+                    <p class="info-row__text">Martín Guemes 906, Las Varillas</p>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-row__icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </span>
+                  <div>
+                    <p class="info-row__title">21:30 hs</p>
+                    <p class="info-row__text">Recepción · cena a las 21:30 hs</p>
+                  </div>
+                </div>
+
+                <a class="btn btn--anim" id="mapsLink" href="https://www.google.com/maps/dir/?api=1&destination=-31.863229974058864,-62.71529792540588" target="_blank" rel="noopener">
+                  <span class="btn__fx" aria-hidden="true">
+                    <span class="btn__layer" style="--d:0s;   --t:26s"></span>
+                    <span class="btn__layer" style="--d:.6s;  --t:34s"></span>
+                    <span class="btn__layer" style="--d:1.4s; --t:30s"></span>
+                    <span class="btn__light"></span>
+                  </span>
+                  <span class="btn__label">Cómo llegar</span>
+                </a>
+              </div>
+
+              <div class="map-card">
+                <span class="map-card__blob" aria-hidden="true"></span>
+                <span class="map-card__blob map-card__blob--b" aria-hidden="true"></span>
+                <div class="map-card__bg">
+                  <iframe title="Ubicación del salón" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.462301868595!2d-62.71529792540588!3d-31.863229974058864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb6521c6b37861%3A0x6fe12ef47fae9bf1!2sWOW%20COUNTRY!5e1!3m2!1ses!2sar!4v1789957110226!5m2!1ses!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- confirmar asistencia -->
+      <section class="section" id="confirmar">
+        <div class="section-inner">
+          <div class="panel-wrap vine-flip" data-vine data-reveal>
+            <div class="glass-panel rsvp-panel">
+              <h2 class="section-title">Confirmá tu asistencia</h2>
+              <p class="section-subtitle" id="rsvpSubtitle">
+               Cargá los nombres de quienes vienen y contanos los detalles
+              </p>
+              <form class="rsvp-form" id="rsvpForm">
+                <div class="field">
+                  <label for="nombreInput">Nombre y apellido</label>
+                  <div class="name-input">
+                    <input type="text" id="nombreInput" placeholder="¿Quién viene?" autocomplete="off">
+                    <button type="button" class="name-add" id="nameAdd" aria-label="Agregar este nombre">+</button>
+                  </div>
+                  <ul class="name-tags" id="nameTags" aria-live="polite"></ul>
+                </div>
+
+                <!-- menores -->
+                <div class="field">
+                  <label class="switch-row">
+                   <input type="checkbox" id="menoresCheck">
+                   <span class="switch-row__box" aria-hidden="true"></span>
+                   <span class="switch-row__text">¿Menores? <em>(hasta 10 años)</em></span>
+                  </label>
+
+                  <div class="menores-count" id="menoresCount" hidden>
+                    <label for="menoresNum">¿Cuántos menores van?</label>
+                    <div class="stepper">
+                      <button type="button" class="stepper__btn" id="menoresMinus" aria-label="Uno menos">−</button>
+                      <input type="number" id="menoresNum" min="0" max="20" step="1" value="1" inputmode="numeric">
+                      <button type="button" class="stepper__btn" id="menoresPlus" aria-label="Uno más">+</button>
+                    </div>
+                  </div>
+                </div>
+
+                <fieldset class="field">
+                  <legend>¿A qué venís?</legend>
+                  <div class="chip-group">
+                    <label class="chip"><input type="radio" name="momento" value="Cena"><span>Cena</span></label>
+                    <label class="chip"><input type="radio" name="momento" value="Brindis"><span>Brindis</span></label>
+                  </div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="alimentacion">Inconveniente alimenticio <span class="field__optional">(opcional)</span></label>
+                  <input type="text" id="alimentacion" placeholder="Celíaco, vegetariano, alergias...">
+                </div>
+                <p class="form-error" id="formError" role="alert" hidden></p>
+                <button type="submit" class="btn btn--anim btn--full">
+                  <span class="btn__fx" aria-hidden="true">
+                    <span class="btn__layer" style="--d:0s;   --t:27s"></span>
+                    <span class="btn__layer" style="--d:.7s;  --t:35s"></span>
+                    <span class="btn__layer" style="--d:1.5s; --t:30s"></span>
+                    <span class="btn__light"></span>
+                  </span>
+                  <span class="btn__label">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2.1c-5.46 0-9.9 4.44-9.9 9.9 0 1.74.46 3.44 1.32 4.94L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.23h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.87-7-2.87Zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.09.81.82-3-.2-.31a8.2 8.2 0 0 1-1.26-4.39c0-4.55 3.7-8.25 8.25-8.25 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.22-8.27 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+                    Confirmar por WhatsApp
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- musica -->
+      <section class="section" id="musica">
+        <div class="section-inner">
+          <div class="panel-wrap" data-vine data-reveal>
+            <div class="glass-panel music-panel">
+              <div class="music-panel__head">
+                <svg class="music-panel__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10.25" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7.5 10.2c2.9-.8 6.6-.6 9 .9M8 13.4c2.4-.6 5.3-.5 7.3.7M8.5 16.3c1.9-.4 4.1-.3 5.7.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <h2 class="section-title">Armemos la playlist</h2>
+                  <div class="spotify-ui">
+                    <div class="sp-controls">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" class="sp-play"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                    </div>
+                    <div class="sp-waves">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="music-form" id="musicForm">
+                <div class="field">
+                  <label for="songGuestName">Tu nombre</label>
+                  <input type="text" id="songGuestName" placeholder="¿Quién sugiere?" required>
+                </div>
+                <div class="field">
+                  <label for="songName">Canción</label>
+                  <input type="text" id="songName" placeholder="Nombre del tema" required>
+                </div>
+                <div class="field field--full">
+                  <label for="songArtist">Artista <span class="field__optional">(opcional)</span></label>
+                  <input type="text" id="songArtist" placeholder="Intérprete">
+                </div>
+                <button type="submit" class="btn btn--anim btn--full">
+                  <span class="btn__fx" aria-hidden="true">
+                    <span class="btn__layer" style="--d:0s;   --t:28s"></span>
+                    <span class="btn__layer" style="--d:.9s;  --t:36s"></span>
+                    <span class="btn__layer" style="--d:1.7s; --t:31s"></span>
+                    <span class="btn__light"></span>
+                  </span>
+                  <span class="btn__label">Sumar canción</span>
+                </button>
+              </form>
+              <ul class="song-list" id="songList" aria-live="polite"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="loose-phrase" data-reveal>Te espero para disfrutar una noche soñada!!</p>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-flowers" id="footerFlowers">
+          <div class="ff-stage">
+            <span class="footer-flowers__shadow" aria-hidden="true"></span>
+            <div class="ff-row" id="ffRow" aria-hidden="true">
+              <div class="fb fb--main" id="ffMain">
+                <div class="flowers">
+                  <div class="flower flower--1">
+                    <div class="flower__leafs flower__leafs--1">
+                      <div class="flower__leaf flower__leaf--1"></div>
+                      <div class="flower__leaf flower__leaf--2"></div>
+                      <div class="flower__leaf flower__leaf--3"></div>
+                      <div class="flower__leaf flower__leaf--4"></div>
+                      <div class="flower__white-circle"></div>
+                      <div class="flower__light flower__light--1"></div>
+                      <div class="flower__light flower__light--2"></div>
+                      <div class="flower__light flower__light--3"></div>
+                      <div class="flower__light flower__light--4"></div>
+                      <div class="flower__light flower__light--5"></div>
+                      <div class="flower__light flower__light--6"></div>
+                      <div class="flower__light flower__light--7"></div>
+                      <div class="flower__light flower__light--8"></div>
+                    </div>
+
+                    <div class="flower__line">
+                      <div class="flower__line__leaf flower__line__leaf--1"></div>
+                      <div class="flower__line__leaf flower__line__leaf--2"></div>
+                      <div class="flower__line__leaf flower__line__leaf--3"></div>
+                      <div class="flower__line__leaf flower__line__leaf--4"></div>
+                      <div class="flower__line__leaf flower__line__leaf--5"></div>
+                      <div class="flower__line__leaf flower__line__leaf--6"></div>
+                    </div>
+                  </div>
+
+                  <div class="flower flower--2">
+                    <div class="flower__leafs flower__leafs--2">
+                      <div class="flower__leaf flower__leaf--1"></div>
+                      <div class="flower__leaf flower__leaf--2"></div>
+                      <div class="flower__leaf flower__leaf--3"></div>
+                      <div class="flower__leaf flower__leaf--4"></div>
+                      <div class="flower__white-circle"></div>
+                      <div class="flower__light flower__light--1"></div>
+                      <div class="flower__light flower__light--2"></div>
+                      <div class="flower__light flower__light--3"></div>
+                      <div class="flower__light flower__light--4"></div>
+                      <div class="flower__light flower__light--5"></div>
+                      <div class="flower__light flower__light--6"></div>
+                      <div class="flower__light flower__light--7"></div>
+                      <div class="flower__light flower__light--8"></div>
+                    </div>
+
+                    <div class="flower__line">
+                      <div class="flower__line__leaf flower__line__leaf--1"></div>
+                      <div class="flower__line__leaf flower__line__leaf--2"></div>
+                      <div class="flower__line__leaf flower__line__leaf--3"></div>
+                      <div class="flower__line__leaf flower__line__leaf--4"></div>
+                    </div>
+                  </div>
+
+                  <div class="flower flower--3">
+                    <div class="flower__leafs flower__leafs--3">
+                      <div class="flower__leaf flower__leaf--1"></div>
+                      <div class="flower__leaf flower__leaf--2"></div>
+                      <div class="flower__leaf flower__leaf--3"></div>
+                      <div class="flower__leaf flower__leaf--4"></div>
+                      <div class="flower__white-circle"></div>
+                      <div class="flower__light flower__light--1"></div>
+                      <div class="flower__light flower__light--2"></div>
+                      <div class="flower__light flower__light--3"></div>
+                      <div class="flower__light flower__light--4"></div>
+                      <div class="flower__light flower__light--5"></div>
+                      <div class="flower__light flower__light--6"></div>
+                      <div class="flower__light flower__light--7"></div>
+                      <div class="flower__light flower__light--8"></div>
+                    </div>
+
+                    <div class="flower__line">
+                      <div class="flower__line__leaf flower__line__leaf--1"></div>
+                      <div class="flower__line__leaf flower__line__leaf--2"></div>
+                      <div class="flower__line__leaf flower__line__leaf--3"></div>
+                      <div class="flower__line__leaf flower__line__leaf--4"></div>
+                    </div>
+                  </div>
+
+                  <div class="grow-ans" style="--d:1.2s">
+                    <div class="flower__g-long">
+                      <div class="flower__g-long__top"></div>
+                      <div class="flower__g-long__bottom"></div>
+                    </div>
+                  </div>
+
+                  <div class="growing-grass">
+                    <div class="flower__grass flower__grass--1">
+                      <div class="flower__grass--top"></div>
+                      <div class="flower__grass--bottom"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+                      <div class="flower__grass__overlay"></div>
+                    </div>
+                  </div>
+
+                  <div class="growing-grass">
+                    <div class="flower__grass flower__grass--2">
+                      <div class="flower__grass--top"></div>
+                      <div class="flower__grass--bottom"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+                      <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+                      <div class="flower__grass__overlay"></div>
+                    </div>
+                  </div>
+
+                  <div class="grow-ans" style="--d:2.4s">
+                    <div class="flower__g-right flower__g-right--1">
+                      <div class="leaf"></div>
+                    </div>
+                  </div>
+
+                  <div class="grow-ans" style="--d:2.8s">
+                    <div class="flower__g-right flower__g-right--2">
+                      <div class="leaf"></div>
+                    </div>
+                  </div>
+
+                  <div class="grow-ans" style="--d:2.8s">
+                    <div class="flower__g-front">
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8">
+                        <div class="flower__g-front__leaf"></div>
+                      </div>
+                      <div class="flower__g-front__line"></div>
+                    </div>
+                  </div>
+
+                  <div class="grow-ans" style="--d:3.2s">
+                    <div class="flower__g-fr">
+                      <div class="leaf"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--1"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--2"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--3"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--4"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--5"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--6"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--7"></div>
+                      <div class="flower__g-fr__leaf flower__g-fr__leaf--8"></div>
+                    </div>
+                  </div>
+
+                  <div class="long-g long-g--0">
+                    <div class="grow-ans" style="--d:3s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:2.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:3.4s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--1">
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:3.8s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:4s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--2">
+                    <div class="grow-ans" style="--d:4s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:4.4s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:4.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--3">
+                    <div class="grow-ans" style="--d:4s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:3s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--4">
+                    <div class="grow-ans" style="--d:4s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:3s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--5">
+                    <div class="grow-ans" style="--d:4s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:3s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--6">
+                    <div class="grow-ans" style="--d:4.2s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:4.4s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:4.6s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:4.8s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                  <div class="long-g long-g--7">
+                    <div class="grow-ans" style="--d:3s"><div class="leaf leaf--0"></div></div>
+                    <div class="grow-ans" style="--d:3.2s"><div class="leaf leaf--1"></div></div>
+                    <div class="grow-ans" style="--d:3.5s"><div class="leaf leaf--2"></div></div>
+                    <div class="grow-ans" style="--d:3.6s"><div class="leaf leaf--3"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ff-fireflies" id="ffFireflies" aria-hidden="true"></div>
+            <p class="footer__name">Yamila</p>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        onload = () => {
+          const c = setTimeout(() => {
+            document.body.classList.remove("not-loaded");
+            clearTimeout(c);
+          }, 1000);
+        };
+      </script>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

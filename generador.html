@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de links · XV de Yamila</title>
+<style>
+  :root{
+    --pino:#167244; --pino-oscuro:#0B2A1D; --pino-suave:#1F8F57;
+    --salvia:#6ACF9D; --salvia-luz:#A9E8C6; --champagne:#E5D7C6; --hueso:#FAF8F5;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:28px 18px 60px;
+    font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--hueso);
+    background:linear-gradient(165deg,#0B2A1D,#123B27 55%,#0E2E1F);
+    min-height:100vh;
+  }
+  .box{max-width:620px;margin:0 auto}
+  h1{font-size:23px;margin:0 0 6px}
+  p.sub{margin:0 0 26px;color:rgba(250,248,245,.65);font-size:14.5px;line-height:1.5}
+  label{display:block;font-size:13px;margin:16px 0 6px;color:rgba(250,248,245,.8)}
+  input[type=text]{
+    width:100%;padding:13px 15px;font-size:16px;font-family:inherit;
+    border-radius:12px;border:1px solid rgba(250,248,245,.3);
+    background:rgba(11,42,29,.35);color:var(--hueso);
+  }
+  input:focus{outline:none;border-color:var(--salvia-luz);box-shadow:0 0 0 3px rgba(106,207,157,.2)}
+  .row{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:14px}
+  button{
+    margin-top:22px;width:100%;padding:14px;border:none;border-radius:999px;
+    font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;
+    color:var(--pino-oscuro);
+    background:linear-gradient(135deg,var(--salvia-luz),var(--pino-suave));
+  }
+  button:active{transform:scale(.97)}
+  .out{
+    margin-top:22px;padding:16px;border-radius:14px;
+    background:rgba(250,248,245,.08);border:1px solid rgba(250,248,245,.2);
+    word-break:break-all;font-size:14px;line-height:1.6;display:none;
+  }
+  .out.show{display:block}
+  .out a{color:var(--salvia-luz)}
+  .copied{color:var(--salvia-luz);font-size:13px;margin-top:8px;display:block}
+  code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:5px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>Generador de links personalizados</h1>
+  <p class="sub">
+    Escribí el nombre de la persona o la familia y generá el link para mandarle por
+    WhatsApp. El nombre llega precargado en el formulario de confirmación, así el
+    invitado solo toca el <strong>+</strong> para sumarlo.
+    Este archivo es una herramienta interna: no hace falta subirlo junto a la invitación.
+  </p>
+
+  <label for="base">Dirección de la invitación</label>
+  <input type="text" id="base" placeholder="https://tu-invitacion.netlify.app" value="">
+
+  <label for="nombre">Nombre del invitado o familia</label>
+  <input type="text" id="nombre" placeholder="Familia Pérez">
+
+  <button id="gen">Generar link</button>
+
+  <div class="out" id="out"></div>
+</div>
+
+<script>
+(function(){
+  var baseInput=document.getElementById('base');
+  // Sugerimos la carpeta actual como dirección base
+  baseInput.value=location.href.replace(/generador\.html.*$/,'index.html');
+
+  document.getElementById('gen').addEventListener('click',function(){
+    var base=baseInput.value.trim().replace(/\?.*$/,'');
+    var nombre=document.getElementById('nombre').value.trim();
+    if(!base||!nombre){ alert('Completá la dirección y el nombre.'); return; }
+
+    var url=base+'?n='+encodeURIComponent(nombre);
+    var out=document.getElementById('out');
+    out.className='out show';
+    out.innerHTML='';
+
+    var a=document.createElement('a');
+    a.href=url; a.target='_blank'; a.rel='noopener'; a.textContent=url;
+    out.appendChild(a);
+
+    var note=document.createElement('span');
+    note.className='copied';
+    out.appendChild(note);
+
+    if(navigator.clipboard){
+      navigator.clipboard.writeText(url).then(function(){
+        note.textContent='✓ Link copiado al portapapeles';
+      }).catch(function(){
+        note.textContent='Copialo manualmente desde arriba';
+      });
+    }else{
+      note.textContent='Copialo manualmente desde arriba';
+    }
+  });
+})();
+</script>
+</body>
+</html>
